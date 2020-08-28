@@ -57,6 +57,19 @@
             }
           }
         },
+        "serveAppAndApi": {
+          "builder": "@nrwl/workspace:run-commands",
+          "options": {
+            "commands": [
+              {
+                "command": "nx run api:serve"
+              },
+              {
+                "command": "nx run store:serve"
+              }
+            ]
+          }
+        },
         "lint": {
           "builder": "@nrwl/linter:lint",
           "options": {
