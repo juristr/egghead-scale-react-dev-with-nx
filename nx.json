@@ -34,6 +34,9 @@
     },
     "store-ui-shared": {
       "tags": []
+    },
+    "store-util-formatters": {
+      "tags": []
     }
   }
 }
