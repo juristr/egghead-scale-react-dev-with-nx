@@ -161,6 +161,36 @@
           }
         }
       }
+    },
+    "store-feature-game-detail": {
+      "root": "libs/store/feature-game-detail",
+      "sourceRoot": "libs/store/feature-game-detail/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:lint",
+          "options": {
+            "linter": "eslint",
+            "tsConfig": [
+              "libs/store/feature-game-detail/tsconfig.lib.json",
+              "libs/store/feature-game-detail/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/store/feature-game-detail/**/*"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/store/feature-game-detail/jest.config.js",
+            "tsConfig": "libs/store/feature-game-detail/tsconfig.spec.json",
+            "passWithNoTests": true
+          }
+        }
+      }
     }
   },
   "cli": {
