@@ -261,6 +261,33 @@
           }
         }
       }
+    },
+    "api-util-interfaces": {
+      "root": "libs/api/util-interfaces",
+      "sourceRoot": "libs/api/util-interfaces/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:lint",
+          "options": {
+            "linter": "eslint",
+            "tsConfig": [
+              "libs/api/util-interfaces/tsconfig.lib.json",
+              "libs/api/util-interfaces/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/api/util-interfaces/**/*"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/api/util-interfaces/jest.config.js",
+            "tsConfig": "libs/api/util-interfaces/tsconfig.spec.json",
+            "passWithNoTests": true
+          }
+        }
+      }
     }
   },
   "cli": {

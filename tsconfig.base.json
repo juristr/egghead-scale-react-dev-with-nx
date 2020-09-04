@@ -22,6 +22,9 @@
       ],
       "@nxegghead/store/feature-game-detail": [
         "libs/store/feature-game-detail/src/index.ts"
+      ],
+      "@nxegghead/api/util-interfaces": [
+        "libs/api/util-interfaces/src/index.ts"
       ]
     }
   },

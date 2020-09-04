@@ -15,11 +15,12 @@ import { formatRating } from '@nxegghead/store/util-formatters';
 import { Route, useHistory } from 'react-router-dom';
 
 import { StoreFeatureGameDetail } from '@nxegghead/store/feature-game-detail';
+import { Game } from '@nxegghead/api/util-interfaces';
 
 export const App = () => {
   const history = useHistory();
   const [state, setState] = useState<{
-    data: any[];
+    data: Game[];
     loadingState: 'success' | 'error' | 'loading';
   }>({
     data: [],
