@@ -49,7 +49,7 @@ export const StoreFeatureGameDetail = (props: StoreFeatureGameDetailProps) => {
   }, [props.match.params.id]);
 
   return (
-    <div className="container">
+    <div className="container" data-testid="game-detail-container">
       {state.loadingState === 'loading' ? (
         'Loading...'
       ) : state.loadingState === 'error' ? (
