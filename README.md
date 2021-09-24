@@ -2,6 +2,8 @@
 
 by Juri Strumpflohner ([Twitter](https://twitter.com/juristr) - [Blog](https://juri.dev))
 
+**🔥🔥 Check out the course on [Egghead.io](https://egghead.io/courses/scale-react-development-with-nx-4038)🔥🔥**
+
 This repository is organized in different branches, one branch for each video lesson
 
 ## Contents
